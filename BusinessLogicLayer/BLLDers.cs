@@ -12,13 +12,13 @@ namespace BusinessLogicLayer
     {
         public static List<EntityDers> DersListeleBLL()
         {
-            return DersDAL.DersleriListele();
+            return DALDers.DersleriListele();
         }
 
         public static int DersKayıtEkleBLL(EntityBasvuruFormu parameter)
         {
             if (parameter.BasDersid != 0 && parameter.BasOgrid != 0) {
-                return DersDAL.DersKayıtEkle(parameter);
+                return DALDers.DersKayıtEkle(parameter);
             }
             return -1;
             

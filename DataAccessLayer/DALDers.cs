@@ -10,7 +10,7 @@ using EntityLayer;
 
 namespace DataAccessLayer
 {
-    public class DersDAL
+    public class DALDers
     {
         public static List<EntityDers> DersleriListele()
         {

@@ -25,7 +25,7 @@ namespace YazOkuluDersKayit
             TxtAd.Text = OgrList[0].Ad.ToString();
             TxtSoyad.Text = OgrList[0].Soyad.ToString();
             TxtNumara.Text = OgrList[0].Numara.ToString();
-            TxtFoto.Text = OgrList[0].Foto.ToString();
+           
             TxtMail.Text = OgrList[0].Mail.ToString();
             
 
@@ -40,7 +40,7 @@ namespace YazOkuluDersKayit
             ogrenci.Ad = TxtAd.Text;
             ogrenci.Soyad = TxtSoyad.Text;
             ogrenci.Numara = TxtNumara.Text;
-            ogrenci.Foto = TxtFoto.Text;    
+             
             ogrenci.Mail = TxtMail.Text;   
             ogrenci.Sifre = TxtSifre.Text;
             BLLOgrenci.OgrenciGuncelleBLL(ogrenci);

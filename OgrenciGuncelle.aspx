@@ -28,12 +28,7 @@
                     :</strong><asp:TextBox ID="TxtNumara" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
             </div>
 
-            <div class="form-group">
-                <strong>
-                    <asp:Label for="TxtFoto" runat="server" Text="Fotoğraf:"></asp:Label>
-                </strong>
-                <asp:TextBox ID="TxtFoto" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
+      
 
             <div class="form-group">
                 <strong>

@@ -38,8 +38,8 @@ namespace YazOkuluDersKayit
             EntityBasvuruFormu entity = new EntityBasvuruFormu();
             entity.BasOgrid = id;
             entity.BasDersid = Convert.ToInt32(DropDownList1.SelectedValue.ToString());
-            BLLDers.DersKayıtEkleBLL(entity);
-            if (BLLDers.DersKayıtEkleBLL(entity) != -1) {
+            int sonuc = BLLDers.DersKayıtEkleBLL(entity);
+            if (sonuc != -1) {
                 Response.Redirect("OgrenciListesi.aspx");
             }
         }

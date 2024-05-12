@@ -13,7 +13,7 @@ namespace DataAccessLayer
     {
         public static int OgrenciEkle(EntityOgrenci parametre)
         {
-            SqlCommand komutOgrEkle = new SqlCommand("insert into TBLOGRENCI (OGRAD,OGRSOYAD,OGRNUMARA,OGRFOTO,OGRMAIL,OGRSIFRE) values (@p1,@p2,@p3,@p4,@p5,@p6)", Baglanti.baglan);
+            SqlCommand komutOgrEkle = new SqlCommand("insert into TBLOGRENCI (OGRAD,OGRSOYAD,OGRNUMARA,OGRMAIL,OGRSIFRE) values (@p1,@p2,@p3,@p5,@p6)", Baglanti.baglan);
 
             if (komutOgrEkle.Connection.State != ConnectionState.Open)
             {
@@ -23,7 +23,7 @@ namespace DataAccessLayer
             komutOgrEkle.Parameters.AddWithValue("@p1", parametre.Ad);
             komutOgrEkle.Parameters.AddWithValue("@p2", parametre.Soyad);
             komutOgrEkle.Parameters.AddWithValue("@p3", parametre.Numara);
-            komutOgrEkle.Parameters.AddWithValue("@p4", parametre.Foto);
+           
             komutOgrEkle.Parameters.AddWithValue("@p5", parametre.Mail);
             komutOgrEkle.Parameters.AddWithValue("@p6", parametre.Sifre);
             return komutOgrEkle.ExecuteNonQuery();
@@ -102,7 +102,7 @@ namespace DataAccessLayer
 
         public static bool OgrenciGuncelle(EntityOgrenci ogrenci)
         {
-            SqlCommand komutGuncelle = new SqlCommand("update TBLOGRENCI set OGRAD=@p2,OGRSOYAD=@p3,OGRNUMARA=@p4,OGRFOTO=@p5,OGRMAIL=@p6,OGRSIFRE=@p7 where OGRID=@p1", Baglanti.baglan);
+            SqlCommand komutGuncelle = new SqlCommand("update TBLOGRENCI set OGRAD=@p2,OGRSOYAD=@p3,OGRNUMARA=@p4,OGRMAIL=@p6,OGRSIFRE=@p7 where OGRID=@p1", Baglanti.baglan);
             if (komutGuncelle.Connection.State != ConnectionState.Open)
             {
                 komutGuncelle.Connection.Open();
@@ -112,7 +112,7 @@ namespace DataAccessLayer
             komutGuncelle.Parameters.AddWithValue("@p2", ogrenci.Ad);
             komutGuncelle.Parameters.AddWithValue("@p3", ogrenci.Soyad);
             komutGuncelle.Parameters.AddWithValue("@p4", ogrenci.Numara);
-            komutGuncelle.Parameters.AddWithValue("@p5", ogrenci.Foto);
+            
             komutGuncelle.Parameters.AddWithValue("@p6", ogrenci.Mail);
             komutGuncelle.Parameters.AddWithValue("@p7", ogrenci.Sifre);
             return komutGuncelle.ExecuteNonQuery() > 0;

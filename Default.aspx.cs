@@ -19,11 +19,13 @@ namespace YazOkuluDersKayit
 
         protected void BtnOgrEkle_Click(object sender, EventArgs e)
         {
+           
+
          EntityOgrenci ogrenci = new EntityOgrenci();
             ogrenci.Ad = TxtAd.Text;
             ogrenci.Soyad = TxtSoyad.Text;
             ogrenci.Numara = TxtNumara.Text;
-            ogrenci.Foto = TxtFoto.Text;
+          
             ogrenci.Mail = TxtMail.Text;
             ogrenci.Sifre = TxtSifre.Text;
          BLLOgrenci.OgrenciEkleBLL(ogrenci);

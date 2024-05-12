@@ -11,7 +11,7 @@ namespace YazOkuluDersKayit
 {
 
 
-    public partial class Default
+    public partial class AdminKayıt
     {
 
         /// <summary>
@@ -42,15 +42,6 @@ namespace YazOkuluDersKayit
         protected global::System.Web.UI.WebControls.TextBox TxtSoyad;
 
         /// <summary>
-        /// TxtNumara control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumara;
-
-        /// <summary>
         /// TxtMail control.
         /// </summary>
         /// <remarks>
@@ -69,12 +60,12 @@ namespace YazOkuluDersKayit
         protected global::System.Web.UI.WebControls.TextBox TxtSifre;
 
         /// <summary>
-        /// BtnOgrEkle control.
+        /// BtnAdminKayit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnOgrEkle;
+        protected global::System.Web.UI.WebControls.Button BtnAdminKayit;
     }
 }

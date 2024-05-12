@@ -12,7 +12,7 @@ namespace BusinessLogicLayer
     {
         public static int OgrenciEkleBLL(EntityOgrenci p)
         {
-            if (p.Ad != null && p.Soyad != null && p.Numara != null && p.Foto != null && p.Mail != null && p.Sifre != null)
+            if (p.Ad != null && p.Soyad != null && p.Numara != null  && p.Mail != null && p.Sifre != null)
             {
                 return DALOgrenci.OgrenciEkle(p);
             }
@@ -44,7 +44,7 @@ namespace BusinessLogicLayer
 
         public static bool OgrenciGuncelleBLL(EntityOgrenci ogrenci)
         {
-            if (ogrenci.Ad != null && ogrenci.Soyad != null && ogrenci.Numara != null && ogrenci.Foto != null && ogrenci.Mail != null)
+            if (ogrenci.Ad != null && ogrenci.Soyad != null && ogrenci.Numara != null  && ogrenci.Mail != null)
             {
                 return DALOgrenci.OgrenciGuncelle(ogrenci);
             }

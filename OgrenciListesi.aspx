@@ -10,9 +10,9 @@
                 <th style="height: 36px">Öğrenci Ad</th>
                 <th style="height: 36px">Öğrenci Soyad</th>
                 <th style="height: 36px">Öğrenci Numara</th>
-                <th style="height: 36px">Öğrenci Fotoğraf</th>
+                
                 <th style="height: 36px">Öğrenci Mail</th>
-                <th style="height: 36px">Bakiye</th>
+               
                 <th style="height: 36px">İşlemler</th>
             </tr>
         </thead>
@@ -24,9 +24,9 @@
                         <td><%#Eval("Ad") %></td>
                         <td><%#Eval("Soyad") %></td>
                         <td><%#Eval("Numara") %></td>
-                        <td><%#Eval("Foto") %></td>
+                      
                         <td><%#Eval("Mail") %></td>
-                        <td><%#Eval("Bakiye") %></td>
+                      
                         <td>
                             <asp:HyperLink NavigateUrl='<%#"~/OgrenciSil.aspx?OGRID="+Eval("ogrenciid")%>' ID="HyperLink1" CssClass="btn btn-danger" runat="server">Sil</asp:HyperLink>
                             <asp:HyperLink NavigateUrl='<%#"~/OgrenciGuncelle.aspx?OGRID="+Eval("ogrenciid")%>' ID="HyperLink2" CssClass="btn btn-success" runat="server">Güncelle</asp:HyperLink>

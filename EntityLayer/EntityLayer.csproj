@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityAdmin.cs" />
     <Compile Include="EntityBasvuruFormu.cs" />
     <Compile Include="EntityDers.cs" />
     <Compile Include="EntityOgrenci.cs" />
+    <Compile Include="EntityOgrenciDers.cs" />
     <Compile Include="EntityOgretmen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
